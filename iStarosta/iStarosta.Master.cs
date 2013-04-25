@@ -24,6 +24,7 @@ namespace iStarosta
             {
                 HyperLink1.Visible = true;
                 LinkButton1.Visible = false;
+                HyperLink2.Visible = false;
             }
         }
 
