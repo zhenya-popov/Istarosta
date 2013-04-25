@@ -32,6 +32,7 @@
             <li><a href='/people'><span>Персоналии</span></a></li>
             <li><a href='/projects'><span>Проекты и направления</span></a></li>
             <li><a href='/photo'><span>Фото</span></a></li>
+            <li><asp:HyperLink ID="HyperLink2" runat="server" Visible="false" NavigateUrl="/profile">Профиль</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/login">Вход</asp:HyperLink></li>
             <li><asp:LinkButton ID="LinkButton1" runat="server" Visible="false" 
                     onclick="LinkButton1_Click">Выход</asp:LinkButton></li>

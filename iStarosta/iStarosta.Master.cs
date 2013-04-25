@@ -17,6 +17,7 @@ namespace iStarosta
             if(Page.User.Identity.Name !="")
             {
                 HyperLink1.Visible = false;
+                HyperLink2.Visible = true;
                 LinkButton1.Visible = true;
             }
             else

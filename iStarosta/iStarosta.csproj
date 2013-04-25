@@ -118,11 +118,11 @@
     <Content Include="Design\img\no.png" />
     <Content Include="Design\img\social\twitter.png" />
     <Content Include="Design\img\social\vk.png" />
-    <Content Include="Enter\MyGroup.aspx" />
-    <Content Include="Enter\MyJournal.aspx" />
-    <Content Include="Enter\MyMessage.aspx" />
-    <Content Include="Enter\MyPage.aspx" />
-    <Content Include="Enter\MyTasks.aspx" />
+    <Content Include="ProfileContent\MyGroup.aspx" />
+    <Content Include="ProfileContent\MyJournal.aspx" />
+    <Content Include="ProfileContent\MyMessage.aspx" />
+    <Content Include="ProfileContent\MyPage.aspx" />
+    <Content Include="ProfileContent\MyTasks.aspx" />
     <Content Include="ErrorPages\404.aspx" />
     <Content Include="ErrorPages\ApplicationErrorPage.aspx" />
     <Content Include="Content\About.aspx" />
@@ -181,39 +181,39 @@
     <Compile Include="Content\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Enter\MyGroup.aspx.cs">
+    <Compile Include="ProfileContent\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Enter\MyGroup.aspx.designer.cs">
+    <Compile Include="ProfileContent\MyGroup.aspx.designer.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Enter\MyJournal.aspx.cs">
+    <Compile Include="ProfileContent\MyJournal.aspx.cs">
       <DependentUpon>MyJournal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Enter\MyJournal.aspx.designer.cs">
+    <Compile Include="ProfileContent\MyJournal.aspx.designer.cs">
       <DependentUpon>MyJournal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Enter\MyMessage.aspx.cs">
+    <Compile Include="ProfileContent\MyMessage.aspx.cs">
       <DependentUpon>MyMessage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Enter\MyMessage.aspx.designer.cs">
+    <Compile Include="ProfileContent\MyMessage.aspx.designer.cs">
       <DependentUpon>MyMessage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Enter\MyPage.aspx.cs">
+    <Compile Include="ProfileContent\MyPage.aspx.cs">
       <DependentUpon>MyPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Enter\MyPage.aspx.designer.cs">
+    <Compile Include="ProfileContent\MyPage.aspx.designer.cs">
       <DependentUpon>MyPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Enter\MyTasks.aspx.cs">
+    <Compile Include="ProfileContent\MyTasks.aspx.cs">
       <DependentUpon>MyTasks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Enter\MyTasks.aspx.designer.cs">
+    <Compile Include="ProfileContent\MyTasks.aspx.designer.cs">
       <DependentUpon>MyTasks.aspx</DependentUpon>
     </Compile>
     <Compile Include="ErrorPages\404.aspx.cs">
