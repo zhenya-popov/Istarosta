@@ -1,0 +1,115 @@
+﻿.fixed { position: fixed;}
+.fl_l { float: left; }
+.fl_r { float: right; }
+.inl_bl {display:-moz-inline-stack; display:inline-block; _overflow:hidden; vertical-align: top;}
+/*MyPage Layout */
+#page_layout {
+  padding: 0px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 6;
+}
+#page_body 
+{
+    display:block;
+    position:relative;
+  font-size: 11px;
+  width: 300px;
+  padding: 0px 15px 0px 0px;
+}
+
+#profile{position: relative; width: 700px; }
+#profile_info{position: relative; width: 470px; margin: 0 auto;}
+#profile_actions{position:relative; width: 200px; margin:10px 0 0 10px; font-size:12px;}
+
+#fap1 {
+  border: solid #fff403;
+  border-width: 0px 1px 1px;
+}
+#fap_between {
+  height: 0px;
+  overflow: hidden;
+}
+
+#header {
+  position: relative;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 7px 10px;
+  line-height: 140%;
+  background: #fff403;
+  color: #607387;
+  border: solid #fff403;
+  border-width: 0px 1px;
+}
+
+#header h1 {
+  margin: 0px;
+  font-size: 11px;
+  overflow: hidden;
+}
+
+/* Left menu */
+
+#left_ads {
+  position: relative;
+  width: 160px;
+}
+
+
+#side_bar {
+  background: #fffdd7;
+  border-bottom-left-radius: 5px;
+  padding: 5px 0 10px 4px;
+  width: 160px;
+}
+#side_bar ol {
+  list-style: none;
+  margin: 0px 0px 10px;
+  padding: 0px;
+}
+#side_bar ol li {
+  font-size: 14px;
+}
+#side_bar ol li .left_column {
+  border: 0;
+  background: #fffdd7;
+  display: block;
+  padding: 0px 0px 0px 6px;
+  white-space: nowrap;
+}
+#side_bar ol li .left_column:hover {
+  background: #fff403;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#side_bar .left_label {
+  padding: 4px 0;
+  height: 20px;
+  border-right-color:#fff403;
+}
+
+/* Clear */
+.clear_fix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .clear_fix {
+  height: 1%;
+}
+.clear_fix {
+  display: block;
+}
+.clear {
+  float: none;
+  clear: both;
+}
+.all {
+  position: relative;
+}
