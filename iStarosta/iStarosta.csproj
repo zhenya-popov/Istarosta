@@ -88,24 +88,25 @@
     <Content Include="Content\albums\theme\supersized.shutter.css" />
     <Content Include="Content\albums\theme\supersized.shutter.js" />
     <Content Include="Content\albums\theme\supersized.shutter.min.js" />
+    <Content Include="Content\Test.aspx" />
     <Content Include="Design\css\style1.css" />
     <Content Include="Design\css\style2.css" />
     <Content Include="Design\img\album.png" />
-    <Content Include="Design\img\BigPeople\44ZUkd10o_o.jpg" />
-    <Content Include="Design\img\BigPeople\47ctRCPdx9E.jpg" />
-    <Content Include="Design\img\BigPeople\6xYRJvZ2snk.jpg" />
-    <Content Include="Design\img\BigPeople\7z4_YHteSM0.jpg" />
-    <Content Include="Design\img\BigPeople\80693.png" />
-    <Content Include="Design\img\BigPeople\ghQUlFTEBf0.jpg" />
-    <Content Include="Design\img\BigPeople\J1_S9ZCzQfg.jpg" />
-    <Content Include="Design\img\BigPeople\jRejDXlAL5A.jpg" />
-    <Content Include="Design\img\BigPeople\mkLSzYxTvMs.jpg" />
-    <Content Include="Design\img\BigPeople\RtbiZeVfm98.jpg" />
-    <Content Include="Design\img\BigPeople\uHYpb65McH4.jpg" />
-    <Content Include="Design\img\BigPeople\vqHye4A3zHQ.jpg" />
-    <Content Include="Design\img\BigPeople\VuX7QXvJ7LI.jpg" />
-    <Content Include="Design\img\BigPeople\WPKZSkeUqGU.jpg" />
-    <Content Include="Design\img\BigPeople\z0L6S7Mb04A.jpg" />
+    <Content Include="Design\img\bsuPerson\2.jpg" />
+    <Content Include="Design\img\bsuPerson\3.jpg" />
+    <Content Include="Design\img\bsuPerson\4.jpg" />
+    <Content Include="Design\img\bsuPerson\47ctRCPdx9E.jpg" />
+    <Content Include="Design\img\bsuPerson\5.jpg" />
+    <Content Include="Design\img\bsuPerson\6.jpg" />
+    <Content Include="Design\img\bsuPerson\7.jpg" />
+    <Content Include="Design\img\bsuPerson\7z4_YHteSM0.jpg" />
+    <Content Include="Design\img\bsuPerson\80693.png" />
+    <Content Include="Design\img\bsuPerson\ghQUlFTEBf0.jpg" />
+    <Content Include="Design\img\bsuPerson\mkLSzYxTvMs.jpg" />
+    <Content Include="Design\img\bsuPerson\1.jpg" />
+    <Content Include="Design\img\bsuPerson\vqHye4A3zHQ.jpg" />
+    <Content Include="Design\img\bsuPerson\VuX7QXvJ7LI.jpg" />
+    <Content Include="Design\img\bsuPerson\z0L6S7Mb04A.jpg" />
     <Content Include="Design\img\bsu.png" />
     <Content Include="Design\img\default.png" />
     <Content Include="Design\img\footer.png" />
@@ -180,6 +181,13 @@
     </Compile>
     <Compile Include="Content\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProfileContent\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>

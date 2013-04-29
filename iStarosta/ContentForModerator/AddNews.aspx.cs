@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,10 +19,18 @@ namespace iStarosta.ContentForModerator
         protected void Button1_Click(object sender, EventArgs e)
         {
             Guid guid = Guid.NewGuid();
-            if(FileUpload1.PostedFile.FileName!="")
-            {
-                FileUpload1.SaveAs(Server.MapPath("~/App_Data/Images/" + guid.ToString()));
 
+            //TODO: try to use this code later for photos
+          /*  string path = AppDomain.CurrentDomain.BaseDirectory + "App_Data/Images/";
+            string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
+            if (filename != null)
+            {
+                FileUpload1.PostedFile.SaveAs(Path.Combine(path, filename));
+            } */
+
+            if (FileUpload1.PostedFile.FileName != "")
+            {
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/App_Data/Images/" + guid.ToString()));
                 News.AddNews(TextBox1.Text, TextArea1.Value, guid.ToString(), "");
             }
             else

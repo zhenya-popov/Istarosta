@@ -12,7 +12,7 @@
         <tbody>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/RtbiZeVfm98.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/RtbiZeVfm98.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Букатич Олег Михайлович</span></strong></p>
@@ -34,7 +34,7 @@
                             http://vkontakte.ru/olegbukatich</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/uHYpb65McH4.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/uHYpb65McH4.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Исаенок Светлана Игоревна</span></strong></p>
@@ -55,7 +55,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vk.com/isaenok">http://vk.com/isaenok</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/44ZUkd10o_o.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/44ZUkd10o_o.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Дударчик Виктория Анатольевна</span></strong></p>
@@ -90,7 +90,7 @@
             </tr>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/6xYRJvZ2snk.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/6xYRJvZ2snk.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Веренич Ольга Ивановна</span></strong></p>
@@ -109,7 +109,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vkontakte.ru/id10494968">http://vk.com/id10494968</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/WPKZSkeUqGU.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/WPKZSkeUqGU.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Диско Виталий Иванович</span></strong></p>
@@ -128,7 +128,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vk.com/id16930032">http://vk.com/id16930032</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/J1_S9ZCzQfg.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/J1_S9ZCzQfg.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Ковель Анна Петровна</span></strong></p>
@@ -160,7 +160,7 @@
             </tr>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/jRejDXlAL5A.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/jRejDXlAL5A.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Лагутин Петр Васильевич</span></strong></p>
@@ -179,7 +179,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vk.com/id6332273">http://vk.com/id6332273</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/80693.png" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/80693.png" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Хайтин Филипп Даниилович</span></strong></p>
@@ -198,7 +198,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="https://vk.com/phillippola">https://vk.com/phillippola</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/z0L6S7Mb04A.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/z0L6S7Mb04A.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Жук Константин Александрович</span></strong></p>
@@ -230,7 +230,7 @@
             </tr>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/mkLSzYxTvMs.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/mkLSzYxTvMs.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Литвинович Юрий Юрьевич</span></strong></p>
@@ -249,7 +249,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vk.com/id15439371">http://vk.com/id15439371</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/ghQUlFTEBf0.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/ghQUlFTEBf0.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Чернюк Кристина Витальевна</span></strong></p>
@@ -269,7 +269,7 @@
                     </div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/7z4_YHteSM0.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/7z4_YHteSM0.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Шестакова Надежда Игоревна</span></strong></p>
@@ -301,7 +301,7 @@
             </tr>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/80693.png" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/80693.png" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Шкода Александра Сергеевна</span></strong></p>
@@ -321,7 +321,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="https://vk.com/id99732015">https://vk.com/id99732015</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/80693.png" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/80693.png" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Дедова Екатерина Игоревна</span></strong></p>
@@ -341,7 +341,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="https://vk.com/id16088279">https://vk.com/id16088279</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/vqHye4A3zHQ.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/vqHye4A3zHQ.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Ручец Анастасия Николаевна</span></strong></p>
@@ -374,7 +374,7 @@
             </tr>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/VuX7QXvJ7LI.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/VuX7QXvJ7LI.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Чаушник Егор Иванович</span></strong></p>
@@ -393,7 +393,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vk.com/id12977675">http://vk.com/id12977675</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/47ctRCPdx9E.jpg" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/47ctRCPdx9E.jpg" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Потоцкая Юлия Владимировна</span></strong></p>
@@ -412,7 +412,7 @@
                         <span style="font-size: 10pt"><b>VK: </b><a href="http://vkontakte.ru/id6707900">http://vk.com/id6707900</a></span></div>
                 </td>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/80693.png" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/80693.png" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt">Бобович Анастасия Юрьевна</span></strong></p>
@@ -445,7 +445,7 @@
             </tr>
             <tr>
                 <td valign="top" align="center">
-                    <img alt="" height="250" src="../Design/img/BigPeople/80693.png" />
+                    <img alt="" height="250" src="../Design/img/bsuPerson/80693.png" />
                     <div style="text-align: center; line-height: normal" align="center">
                         <p>
                             <strong><span style="font-size: 10pt"></span></strong>
