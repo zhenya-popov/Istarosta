@@ -61,6 +61,7 @@
     <Content Include="App_Data\Images\1.gif" />
     <Content Include="App_Data\Images\default.gif" />
     <Content Include="ContentForAdmin\AddUser.aspx" />
+    <Content Include="ContentForModerator\AddPerson.aspx" />
     <Content Include="ContentForModerator\EditNews.aspx" />
     <Content Include="Content\albums\Album.aspx" />
     <Content Include="Content\albums\css\supersized.css" />
@@ -88,7 +89,6 @@
     <Content Include="Content\albums\theme\supersized.shutter.css" />
     <Content Include="Content\albums\theme\supersized.shutter.js" />
     <Content Include="Content\albums\theme\supersized.shutter.min.js" />
-    <Content Include="Content\Test.aspx" />
     <Content Include="Design\css\style1.css" />
     <Content Include="Design\css\style2.css" />
     <Content Include="Design\img\album.png" />
@@ -154,6 +154,13 @@
     <Compile Include="ContentForAdmin\AddUser.aspx.designer.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContentForModerator\AddPerson.aspx.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\AddPerson.aspx.designer.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContentForModerator\EditNews.aspx.cs">
       <DependentUpon>EditNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -181,13 +188,6 @@
     </Compile>
     <Compile Include="Content\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProfileContent\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>

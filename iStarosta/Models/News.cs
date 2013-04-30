@@ -166,7 +166,7 @@ namespace iStarosta.Models
                 connection.Open();
 
                 SqlCommand command = new SqlCommand("DELETE FROM news WHERE id=@NewsId", connection);
-                SqlParameter parBook = new SqlParameter("@BookId", NewsId);
+                SqlParameter parBook = new SqlParameter("@NewsId", NewsId);
                 command.Parameters.Add(parBook);
                 command.ExecuteNonQuery();
             }

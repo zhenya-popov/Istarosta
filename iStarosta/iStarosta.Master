@@ -32,7 +32,6 @@
             <li><a href='/people'><span>Персоналии</span></a></li>
             <li><a href='/projects'><span>Проекты и направления</span></a></li>
             <li><a href='/photo'><span>Фото</span></a></li>
-            <li><a href='Test.aspx'><span>test</span></a></li>
             <li><asp:HyperLink ID="HyperLink2" runat="server" Visible="false" NavigateUrl="/profile">Профиль</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/login">Вход</asp:HyperLink></li>
             <li><asp:LinkButton ID="LinkButton1" runat="server" Visible="false" 
@@ -48,7 +47,7 @@
         <br/>
         <center><b>iStarosta © 2013 г.</b></center>
         </div>
-    </div
+    </div>
     </form>
 </body>
 </html>
