@@ -22,6 +22,7 @@ namespace iStarosta.Models
         public string Role { get; set; }
 
         public string Birthday { get; set; }
+        public string Image { get; set; }
         public string City { get; set; }
         public string Status { get; set; }
         public string Phone { get; set; }
@@ -92,6 +93,55 @@ namespace iStarosta.Models
             return bsuUser;
         }
 
+        public static void UpdateUser(BsuUser user)
+        {
+            SqlConnection connection = null;
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                SqlCommand command = new SqlCommand("UPDATE userinfo SET birthday=@Birthday,course=@Course, facebook=@Facebook," +
+                                                    "faculty=@Faculty, phone=@Phone, group=@Group," +
+                                                    "skype=@Skype, status=@Status, twitter=@Twitter," +
+                                                    "city=@City WHERE id=@Id", connection);
+                SqlParameter birthday = new SqlParameter("@Birthday", user.Birthday);
+                command.Parameters.Add(birthday);
+                SqlParameter course = new SqlParameter("@Course", user.Course);
+                command.Parameters.Add(course);
+                SqlParameter facebook = new SqlParameter("@Facebook", user.Facebook);
+                command.Parameters.Add(facebook);
+                SqlParameter faculty = new SqlParameter("@Faculty", user.Faculty);
+                command.Parameters.Add(faculty);
+                SqlParameter phone = new SqlParameter("@Phone", user.Phone);
+                command.Parameters.Add(phone);
+                SqlParameter group = new SqlParameter("@Group", user.Group);
+                command.Parameters.Add(group);
+                SqlParameter skype = new SqlParameter("@Skype", user.Skype);
+                command.Parameters.Add(skype);
+                SqlParameter status = new SqlParameter("@Status", user.Status);
+                command.Parameters.Add(status);
+                SqlParameter twitter = new SqlParameter("@Twitter", user.Twitter);
+                command.Parameters.Add(twitter);
+                SqlParameter city = new SqlParameter("@City", user.City);
+                command.Parameters.Add(city);
+                SqlParameter parId = new SqlParameter("@Id", user.Id);
+                command.Parameters.Add(parId);
+                command.ExecuteNonQuery();
+
+
+            }
+            catch (Exception e)
+            {
+            }
+            finally
+            {
+                if (connection != null && connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
 
         public void ChangeInfo(int id, string password)
         {
@@ -169,8 +219,8 @@ namespace iStarosta.Models
                 connection = new SqlConnection(ConnectionString);
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("INSERT INTO users (userid, email, surname, patronymic, password, studygroup, course, faculty, role, status)" +
-                                                    " VALUES (@Email, @Name, @Surname, @Patronymic, @Password, @Studygroup, @Course, @Faculty, @Role, @Status)", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO users (userid, email, surname, patronymic, password, studygroup, course, faculty, role, status, image)" +
+                                                    " VALUES (@Email, @Name, @Surname, @Patronymic, @Password, @Studygroup, @Course, @Faculty, @Role, @Status, @Image)", connection);
 
                 string role = (user.Role == "") ? "user" : user.Role;
                 SqlParameter parRole = new SqlParameter("@Role", role);
@@ -193,6 +243,8 @@ namespace iStarosta.Models
                 command.Parameters.Add(faculty);
                 SqlParameter status = new SqlParameter("@Status", user.Status);
                 command.Parameters.Add(status);
+                SqlParameter img = new SqlParameter("@Image", user.Image);
+                command.Parameters.Add(img);
                 command.ExecuteNonQuery();
 
             }
@@ -234,6 +286,7 @@ namespace iStarosta.Models
             bsuUser.Facebook = reader["facebook"].ToString();
             bsuUser.Skype = reader["skype"].ToString();
             bsuUser.Twitter = reader["twitter"].ToString();
+            bsuUser.Image = reader["image"].ToString();
 
 
             return bsuUser;
