@@ -33,9 +33,11 @@
                                             <div class="fl_l">
                                                 
                                                             <img width="200" height="300" src="../Design/img/default.png"
-                                                                alt="Филипп  Хайтин"><!--Максимальный размер фотки 200х394рх-->
+                                                                alt=""><!--Максимальный размер фотки 200х394рх-->
                                                 <div id="profile_actions">
                                                     <a href="">Загрузить новую фотографию</a><br />
+                                                    <asp:FileUpload ID="FileUpload1" runat="server" 
+                                                        ondatabinding="FileUpload1_DataBinding" onload="FileUpload1_Load" />
                                                     <a href="">Редактировать страницу</a></div>
                                             </div>
                                         </div>

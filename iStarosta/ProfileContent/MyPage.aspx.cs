@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -26,6 +27,28 @@ namespace iStarosta.Enter
             FacebookLabel.Text = user.Facebook;
             SkypeLabel.Text = user.Skype;
             TwitterLabel.Text = user.Twitter;
+        }
+
+        protected void FileUpload1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void FileUpload1_DataBinding(object sender, EventArgs e)
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Design/img/avatars";
+            string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
+            if (filename != "")
+            {
+                FileUpload1.PostedFile.SaveAs(Path.Combine(path, filename));
+            }
+            else
+            {
+                filename = "default.png";
+            }
+
+            BsuUser user = BsuUser.GetByName(Page.User.Identity.Name);
+            
         }
     }
 }
