@@ -52,7 +52,7 @@
                                                             <b>День рождения:</b>
                                                         </td>
                                                         <td style="width: 350px">
-                                                            21 октября 1991
+                                                            <asp:Label ID="BirthdayLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -60,7 +60,7 @@
                                                             <b>Родной город:</b>
                                                         </td>
                                                         <td>
-                                                            Минск
+                                                            <asp:Label ID="CityLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -81,7 +81,7 @@
                                                             <b>Статус:</b>
                                                         </td>
                                                         <td>
-                                                            Староста факультета
+                                                            <asp:Label ID="PositionLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -89,7 +89,7 @@
                                                             <b>Курс:</b>
                                                         </td>
                                                         <td>
-                                                            4
+                                                            <asp:Label ID="CourseLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -97,7 +97,7 @@
                                                             <b>Группа:</b>
                                                         </td>
                                                         <td>
-                                                            2
+                                                            <asp:Label ID="GroupLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -110,7 +110,7 @@
                                                             <b>Моб. телефон:</b>
                                                         </td>
                                                         <td style="width: 350px">
-                                                            wqeqweqwe
+                                                            <asp:Label ID="PhoneLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -118,6 +118,7 @@
                                                             <b>Вконтакте:</b>
                                                         </td>
                                                         <td>
+                                                            <asp:Label ID="VkLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -125,6 +126,7 @@
                                                             <b>facebook:</b>
                                                         </td>
                                                         <td>
+                                                            <asp:Label ID="FacebookLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -132,6 +134,7 @@
                                                             <b>Skype:</b>
                                                         </td>
                                                         <td>
+                                                            <asp:Label ID="SkypeLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -139,6 +142,7 @@
                                                             <b>Twitter:</b>
                                                         </td>
                                                         <td>
+                                                            <asp:Label ID="TwitterLabel" runat="server" Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                 </table>

@@ -16,6 +16,16 @@ namespace iStarosta.Enter
             NameLabel.Text = user.Name;
             SurnameLabel.Text = user.Surname;
             FacultyLabel.Text = user.Faculty;
+            BirthdayLabel.Text = user.Birthday;
+            CityLabel.Text = user.City;
+            PositionLabel.Text = user.Status;
+            CourseLabel.Text = user.Course.ToString();
+            GroupLabel.Text = user.Group.ToString();
+            PhoneLabel.Text = user.Phone;
+            VkLabel.Text = user.Vk;
+            FacebookLabel.Text = user.Facebook;
+            SkypeLabel.Text = user.Skype;
+            TwitterLabel.Text = user.Twitter;
         }
     }
 }
