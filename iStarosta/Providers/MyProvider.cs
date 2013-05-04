@@ -43,7 +43,6 @@ namespace iStarosta.Providers
 
         public override bool ValidateUser(string username, string password)
         {
-            bool a = users.Exists(m => (m.Email == username) && (m.Password == password));
             return users.Exists(m => (m.Email == username) && (m.Password == password));
         }
 
