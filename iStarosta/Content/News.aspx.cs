@@ -12,12 +12,19 @@ namespace iStarosta.Content
 {
     public partial class News : System.Web.UI.Page
     {
+        public bool isAdmin { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (User.IsInRole("moderator") || User.IsInRole("admin"))
             {
                 AddNewsLink.Visible = true;
+                isAdmin = true;
+            }
+            else
+            {
+                isAdmin = false;
             }
         }
     }
