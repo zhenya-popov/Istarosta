@@ -13,7 +13,7 @@
                             <li style=""><a href="/Content/MyMessage.aspx" class="left_column"><span class="left_label inl_bl">Мои сообщения</span></a></li>
                             <li style=""><a href="MyJournal.aspx" class="left_column"><span class="left_label inl_bl">
                                 Мой журнал</span></a></li>
-                            <li style=""><a href="" class="left_column"><span class="left_label inl_bl">Моя группа</span></a></li>
+                            <li style=""><a href="/group" class="left_column"><span class="left_label inl_bl">Моя группа</span></a></li>
                             <li style=""><a href="MyTasks.aspx" class="left_column"><span class="left_label inl_bl">
                                 Мои задачи</span></a></li></ol>
                     </div>

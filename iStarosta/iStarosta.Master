@@ -16,7 +16,7 @@
     <form id="form1" runat="server">
     <div>
         <div class="header">
-            <a href="/Login"><img alt='' src="/Design/img/header.png" /></a>
+           <img alt='' src="/Design/img/header.png" />
             
             <a href="http://www.bsu.by/" target="_blank">
                 <img alt='' title="официальный сайт Белорусского государственного университета" src="/Design/img/bsu.png"

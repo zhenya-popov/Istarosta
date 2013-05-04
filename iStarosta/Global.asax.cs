@@ -28,6 +28,7 @@ namespace iStarosta
             routes.MapPageRoute("", "projects", "~/Content/Projects.aspx");
             routes.MapPageRoute("", "adduser", "~/ContentForAdmin/AddUser.aspx");
             routes.MapPageRoute("", "profile", "~/ProfileContent/MyPage.aspx");
+            routes.MapPageRoute("", "group", "~/ProfileContent/MyGroup.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

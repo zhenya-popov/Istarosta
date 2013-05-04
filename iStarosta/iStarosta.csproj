@@ -230,6 +230,7 @@
       <DependentUpon>SendMessage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Messages.cs" />
+    <Compile Include="Models\Group.cs" />
     <Compile Include="ProfileContent\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
