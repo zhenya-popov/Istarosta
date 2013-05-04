@@ -21,6 +21,15 @@ namespace iStarosta.Models
         public string Faculty { get; set; }
         public string Role { get; set; }
 
+        public string Birthday { get; set; }
+        public string Sity { get; set; }
+        public string Status { get; set; }
+        public string Phone { get; set; }
+        public string Vk { get; set; }
+        public string Facebook { get; set; }
+        public string Skype { get; set; }
+        public string Twitter { get; set; }
+
         public static List<BsuUser> GetUsers()
         {
             List<BsuUser> list = new List<BsuUser>();
@@ -160,8 +169,8 @@ namespace iStarosta.Models
                 connection = new SqlConnection(ConnectionString);
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("INSERT INTO users (userid, email, surname, patronymic, password, studygroup, course, faculty, role)" +
-                                                    " VALUES (@Email, @Name, @Surname, @Patronymic, @Password, @Studygroup, @Course, @Faculty, @Role)", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO users (userid, email, surname, patronymic, password, studygroup, course, faculty, role, status)" +
+                                                    " VALUES (@Email, @Name, @Surname, @Patronymic, @Password, @Studygroup, @Course, @Faculty, @Role, @Status)", connection);
 
                 string role = (user.Role == "") ? "user" : user.Role;
                 SqlParameter parRole = new SqlParameter("@Role", role);
@@ -182,6 +191,8 @@ namespace iStarosta.Models
                 command.Parameters.Add(course);
                 SqlParameter faculty = new SqlParameter("@Faculty", user.Faculty);
                 command.Parameters.Add(faculty);
+                SqlParameter status = new SqlParameter("@Status", user.Status);
+                command.Parameters.Add(status);
                 command.ExecuteNonQuery();
 
             }
@@ -214,6 +225,16 @@ namespace iStarosta.Models
             bsuUser.Faculty = reader["faculty"].ToString();
             bsuUser.Password = reader["password"].ToString();
             bsuUser.Role = reader["role"].ToString();
+
+            bsuUser.Birthday = reader["ibrthday"].ToString();
+            bsuUser.Sity = reader["sity"].ToString();
+            bsuUser.Status = reader["status"].ToString();
+            bsuUser.Phone = reader["phone"].ToString();
+            bsuUser.Vk = reader["vk"].ToString();
+            bsuUser.Facebook = reader["facebook"].ToString();
+            bsuUser.Skype = reader["skype"].ToString();
+            bsuUser.Twitter = reader["twitter"].ToString();
+
 
             return bsuUser;
         }
