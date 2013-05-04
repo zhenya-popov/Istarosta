@@ -144,6 +144,54 @@ namespace iStarosta.Models
             return true;
         }
 
+        public static void UpdateInfo(UserInfo info)
+        {
+            SqlConnection connection = null;
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                SqlCommand command = new SqlCommand("UPDATE userinfo SET name=@Name,surname=@Surname, patronymic=@Patronymic," +
+                                                    "email=@Email, faculty=@Faculty, position=@Position," +
+                                                    "phonenumber=@Phonenumber, vkontakte=@Vkontakte, skype=@Skype," +
+                                                    "course=@Course WHERE id=@Id", connection);
+                SqlParameter name = new SqlParameter("@Name", info.Name);
+                command.Parameters.Add(name);
+                SqlParameter surname = new SqlParameter("@Surname", info.Surname);
+                command.Parameters.Add(surname);
+                SqlParameter patronymic = new SqlParameter("@Patronymic", info.Patronymic);
+                command.Parameters.Add(patronymic);
+                SqlParameter email = new SqlParameter("@Email", info.Email);
+                command.Parameters.Add(email);
+                SqlParameter faculty = new SqlParameter("@Faculty", info.Faculty);
+                command.Parameters.Add(faculty);
+                SqlParameter position = new SqlParameter("@Position", info.Position);
+                command.Parameters.Add(position);
+                SqlParameter number = new SqlParameter("@PhoneNumber", info.PhoneNumber);
+                command.Parameters.Add(number);
+                SqlParameter vk = new SqlParameter("@Vkontakte", info.Vkontakte);
+                command.Parameters.Add(vk);
+                SqlParameter skype = new SqlParameter("@Skype", info.Skype);
+                command.Parameters.Add(skype);
+                SqlParameter course = new SqlParameter("@Course", info.Course);
+                command.Parameters.Add(course);
+                SqlParameter id = new SqlParameter("@Id", info.Id);
+                command.Parameters.Add(id);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+            }
+            finally
+            {
+                if (connection != null && connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
         public static bool DeleteUser(int Id)
         {
             SqlConnection connection = null;

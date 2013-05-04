@@ -29,7 +29,7 @@
                 <div style="text-align: center; line-height: normal" align="center">
                     <p>
                         <strong><span style="font-size: 10pt">
-                            <%# Eval("surname")%><%# Eval("name")%>
+                            <%# Eval("surname")%> <%# Eval("name")%>
                             <%# Eval("patronymic")%></span></strong></p>
                 </div>
                 <div style="text-align: center; line-height: normal" align="center">

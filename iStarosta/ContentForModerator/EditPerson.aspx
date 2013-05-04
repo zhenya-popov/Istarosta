@@ -13,7 +13,7 @@ CodeBehind="EditPerson.aspx.cs" Inherits="iStarosta.ContentForModerator.EditPers
    vk:<asp:TextBox ID="TextBox9" runat="server"></asp:TextBox><br/>
    Course:<asp:TextBox ID="TextBox10" runat="server"></asp:TextBox><br/>
    Image:<asp:FileUpload ID="FileUpload1" runat="server" />
-    <asp:Button ID="Button1" runat="server" Text="Добавить" 
+    <asp:Button ID="Button1" runat="server" Text="Сохранить" 
         onclick="Button1_Click" />
 </asp:Content>
 
