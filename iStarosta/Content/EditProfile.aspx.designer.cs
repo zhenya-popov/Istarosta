@@ -49,13 +49,13 @@ namespace iStarosta.Content {
         protected global::System.Web.UI.WebControls.TextBox txtBirthday;
         
         /// <summary>
-        /// txtSity control.
+        /// txtCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSity;
+        protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
         /// txtStatus control.
@@ -110,5 +110,14 @@ namespace iStarosta.Content {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTwitter;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
