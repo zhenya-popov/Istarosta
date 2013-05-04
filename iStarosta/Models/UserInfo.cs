@@ -54,6 +54,38 @@ namespace iStarosta.Models
             return list;
         }
 
+        public static UserInfo GetById(int Id)
+        {
+            SqlConnection connection = null;
+            UserInfo user = null;
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT * FROM userinfo WHERE Id= @Id", connection);
+                SqlParameter parId = new SqlParameter("@Id", Id);
+                command.Parameters.Add(parId);
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    user = UserInfo.EnterData(reader);
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            finally
+            {
+                if (connection != null && connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+            return user;
+        }
+
         public static bool CreateUser(UserInfo user)
         {
             SqlConnection connection = null;
