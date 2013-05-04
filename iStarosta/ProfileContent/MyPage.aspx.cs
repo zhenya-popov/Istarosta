@@ -27,28 +27,15 @@ namespace iStarosta.Enter
             FacebookLabel.Text = user.Facebook;
             SkypeLabel.Text = user.Skype;
             TwitterLabel.Text = user.Twitter;
-        }
 
-        protected void FileUpload1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void FileUpload1_DataBinding(object sender, EventArgs e)
-        {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "Design/img/avatars";
-            string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
-            if (filename != "")
+            if(user.Image != "")
             {
-                FileUpload1.PostedFile.SaveAs(Path.Combine(path, filename));
+                Image1.ImageUrl = "../Design/img/avatars/" + user.Image;
             }
             else
             {
-                filename = "default.png";
+                Image1.ImageUrl = "../Design/img/avatars/default.png";
             }
-
-            BsuUser user = BsuUser.GetByName(Page.User.Identity.Name);
-            
         }
     }
 }

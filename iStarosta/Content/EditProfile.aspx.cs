@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -49,6 +50,18 @@ namespace iStarosta.Content
             news.Twitter = txtTwitter.Text;
             news.Vk = txtVk.Text;
             news.Status = txtStatus.Text;
+
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Design/img/avatars/";
+            string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
+            if (filename != "")
+            {
+                FileUpload1.PostedFile.SaveAs(Path.Combine(path, filename));
+            }
+            else
+            {
+                filename = "default.png";
+            }
+            news.Image = filename;
             BsuUser.UpdateUser(news);
             Response.Redirect("/profile");
         }

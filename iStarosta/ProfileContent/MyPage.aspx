@@ -31,11 +31,8 @@
                                     <div id="content">
                                         <div id="profile">
                                             <div class="fl_l">
-                                                
-                                                            <img width="200" height="300" src="../Design/img/default.png"
-                                                                alt="Филипп  Хайтин"><!--Максимальный размер фотки 200х394рх-->
+                                                <asp:Image ID="Image1" runat="server" Height="200px" Width="200px"/>
                                                 <div id="profile_actions">
-                                                    <a href="">Загрузить новую фотографию</a><br />
                                                     <a href="/Content/EditProfile.aspx">Редактировать страницу</a></div>
                                             </div>
                                         </div>

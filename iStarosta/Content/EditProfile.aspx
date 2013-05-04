@@ -14,6 +14,7 @@
     vk:<asp:TextBox ID="txtVk" runat="server"></asp:TextBox>
     fb:<asp:TextBox ID="txtFacebook" runat="server"></asp:TextBox>
     skype:<asp:TextBox ID="txtSkype" runat="server"></asp:TextBox>
-    twitter<asp:TextBox ID="txtTwitter" runat="server"></asp:TextBox>
+    twitter<asp:TextBox ID="txtTwitter" runat="server"></asp:TextBox><br/>
+    Изенить аватар: <br/><asp:FileUpload ID="FileUpload1" runat="server" />
     <asp:Button ID="Button1" runat="server" Text="Save" onclick="Button1_Click" />
 </asp:Content>
