@@ -87,6 +87,7 @@
     <Content Include="Content\albums\js\supersized.3.2.7.js" />
     <Content Include="Content\albums\js\supersized.3.2.7.min.js" />
     <Content Include="Content\Clause.aspx" />
+    <Content Include="Content\EditProfile.aspx" />
     <Content Include="Content\NewsDetails.aspx" />
     <Content Include="Content\albums\theme\supersized.shutter.css" />
     <Content Include="Content\albums\theme\supersized.shutter.js" />
@@ -197,6 +198,13 @@
     </Compile>
     <Compile Include="Content\Clause.aspx.designer.cs">
       <DependentUpon>Clause.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\NewsDetails.aspx.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>

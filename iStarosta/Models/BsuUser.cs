@@ -101,10 +101,7 @@ namespace iStarosta.Models
                 string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-                SqlCommand command = new SqlCommand("UPDATE userinfo SET birthday=@Birthday,course=@Course, facebook=@Facebook," +
-                                                    "faculty=@Faculty, phone=@Phone, group=@Group," +
-                                                    "skype=@Skype, status=@Status, twitter=@Twitter," +
-                                                    "city=@City WHERE id=@Id", connection);
+                SqlCommand command = new SqlCommand("UPDATE users SET birthday=@Birthday, course=@Course, facebook=@Facebook, faculty=@Faculty, phone=@Phone, studygroup=@Group, skype=@Skype, status=@Status, twitter=@Twitter, city=@City, vk=@VK WHERE id=@Id", connection);
                 SqlParameter birthday = new SqlParameter("@Birthday", user.Birthday);
                 command.Parameters.Add(birthday);
                 SqlParameter course = new SqlParameter("@Course", user.Course);
@@ -125,6 +122,8 @@ namespace iStarosta.Models
                 command.Parameters.Add(twitter);
                 SqlParameter city = new SqlParameter("@City", user.City);
                 command.Parameters.Add(city);
+                SqlParameter vk = new SqlParameter("@VK", user.Vk);
+                command.Parameters.Add(vk);
                 SqlParameter parId = new SqlParameter("@Id", user.Id);
                 command.Parameters.Add(parId);
                 command.ExecuteNonQuery();
