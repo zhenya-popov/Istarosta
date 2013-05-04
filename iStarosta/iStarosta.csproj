@@ -63,6 +63,7 @@
     <Content Include="ContentForAdmin\AddUser.aspx" />
     <Content Include="ContentForModerator\AddPerson.aspx" />
     <Content Include="ContentForModerator\EditNews.aspx" />
+    <Content Include="ContentForModerator\EditPerson.aspx" />
     <Content Include="Content\albums\Album.aspx" />
     <Content Include="Content\albums\css\supersized.css" />
     <Content Include="Content\albums\img\back.png" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="ContentForModerator\EditNews.aspx.designer.cs">
       <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentForModerator\EditPerson.aspx.cs">
+      <DependentUpon>EditPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\EditPerson.aspx.designer.cs">
+      <DependentUpon>EditPerson.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\albums\Album.aspx.cs">
       <DependentUpon>Album.aspx</DependentUpon>

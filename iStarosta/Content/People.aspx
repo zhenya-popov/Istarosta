@@ -28,23 +28,40 @@
                 <img alt="" height="250" src='<%# "../Design/img/bsuPerson/" + Eval("imagelink")%>' />
                 <div style="text-align: center; line-height: normal" align="center">
                     <p>
-                        <strong><span style="font-size: 10pt"><%# Eval("surname")%><%# Eval("name")%>
-                        <%# Eval("patronymic")%></span></strong></p>
+                        <strong><span style="font-size: 10pt">
+                            <%# Eval("surname")%><%# Eval("name")%>
+                            <%# Eval("patronymic")%></span></strong></p>
                 </div>
                 <div style="text-align: center; line-height: normal" align="center">
-                    <span style="font-size: 10pt"><%# Eval("position")%></span></div>
+                    <span style="font-size: 10pt">
+                        <%# Eval("position")%></span></div>
                 <div style="text-align: center; line-height: normal; margin: 12pt 0cm 0pt" align="center">
-                    <span style="font-size: 10pt"><%# Eval("faculty")%></span></div>
+                    <span style="font-size: 10pt">
+                        <%# Eval("faculty")%></span></div>
                 <div style="text-align: center; line-height: normal; margin: 12pt 0cm 0pt" align="center">
-                    <span style="font-size: 10pt"><%# Eval("course")%> курс</span></div>
+                    <span style="font-size: 10pt">
+                        <%# Eval("course")%>
+                        курс</span></div>
                 <div style="text-align: center; line-height: normal" align="center">
                     <span style="font-size: 10pt"><b>Контакты:</b></span></div>
                 <div style="text-align: center; line-height: normal" align="center">
-                    <span style="font-size: 10pt"><b>Телефон: </b><%# Eval("phonenumber")%></span></div>
+                    <span style="font-size: 10pt"><b>Телефон: </b>
+                        <%# Eval("phonenumber")%></span></div>
                 <div style="text-align: center; line-height: normal" align="center">
-                    <span style="font-size: 10pt"><b>e-mail: </b><%# Eval("email")%></span></div>
+                    <span style="font-size: 10pt"><b>e-mail: </b>
+                        <%# Eval("email")%></span></div>
                 <div style="text-align: center; line-height: normal" align="center">
-                    <span style="font-size: 10pt"><b>VK: </b> <%# Eval("vkontakte")%></span></div>
+                    <span style="font-size: 10pt"><b>VK: </b>
+                        <%# Eval("vkontakte")%></span></div>
+                <%
+                    if (User.IsInRole("moderator") || User.IsInRole("admin"))
+                    {
+                %>
+                <div>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ContentForModerator/EditPerson.aspx?postId="+ Eval("Id") %>'>Edit</asp:HyperLink>
+                </div>
+                <%
+                } %>
             </td>
         </ItemTemplate>
     </asp:ListView>
