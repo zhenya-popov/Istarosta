@@ -59,6 +59,7 @@
                 %>
                 <div>
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ContentForModerator/EditPerson.aspx?postId="+ Eval("Id") %>'>Edit</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/ContentForModerator/DeletePerson.aspx?postId="+ Eval("Id") %>'>Delete</asp:HyperLink>
                 </div>
                 <%
                 } %>
