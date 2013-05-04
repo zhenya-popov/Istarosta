@@ -29,7 +29,7 @@ namespace iStarosta.Content
                 txtPhone.Text = news.Phone;
                 txtCity.Text = news.City;
                 txtSkype.Text = news.Skype;
-                txtStatus.Text = news.Skype;
+                txtStatus.Text = news.Status;
                 txtTwitter.Text = news.Twitter;
                 txtVk.Text = news.Vk;
             }
@@ -37,7 +37,7 @@ namespace iStarosta.Content
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            BsuUser news = BsuUser.GetById(Convert.ToInt32(Request.Params["postId"]));
+            BsuUser news = BsuUser.GetByName(Page.User.Identity.Name);
             news.Birthday = txtBirthday.Text;
             news.Course = Convert.ToInt32(txtCourse.Text);
             news.Facebook = txtFacebook.Text;
@@ -48,8 +48,9 @@ namespace iStarosta.Content
             news.Skype = txtSkype.Text;
             news.Twitter = txtTwitter.Text;
             news.Vk = txtVk.Text;
+            news.Status = txtStatus.Text;
             BsuUser.UpdateUser(news);
-            Response.Redirect("/news");
+            Response.Redirect("/profile");
         }
     }
 }
