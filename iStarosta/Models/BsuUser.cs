@@ -22,7 +22,7 @@ namespace iStarosta.Models
         public string Role { get; set; }
 
         public string Birthday { get; set; }
-        public string Sity { get; set; }
+        public string City { get; set; }
         public string Status { get; set; }
         public string Phone { get; set; }
         public string Vk { get; set; }
@@ -226,8 +226,8 @@ namespace iStarosta.Models
             bsuUser.Password = reader["password"].ToString();
             bsuUser.Role = reader["role"].ToString();
 
-            bsuUser.Birthday = reader["ibrthday"].ToString();
-            bsuUser.Sity = reader["sity"].ToString();
+            bsuUser.Birthday = reader["birthday"].ToString();
+            bsuUser.City = reader["city"].ToString();
             bsuUser.Status = reader["status"].ToString();
             bsuUser.Phone = reader["phone"].ToString();
             bsuUser.Vk = reader["vk"].ToString();
