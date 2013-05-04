@@ -213,6 +213,7 @@
     <Compile Include="Content\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Group.cs" />
     <Compile Include="ProfileContent\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
