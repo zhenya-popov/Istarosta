@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/iStarosta.Master" AutoEventWireup="true"
     CodeBehind="News.aspx.cs" Inherits="iStarosta.Content.News" %>
-<%@ Import Namespace="iStarosta.Content" %>
 
+<%@ Import Namespace="iStarosta.Content" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -16,10 +16,10 @@
                             <div class="newsList">
                                 <div class="item">
                                     <div class="pic">
-                                        
-                                            <img src="" alt="" /><asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Handlers/PictureHandler.ashx?imageName="+ Eval("ImageName") %>' CssClass="pic" /></div>
+                                        <img src="" alt="" /><asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/Handlers/PictureHandler.ashx?imageName="+ Eval("ImageName") %>'
+                                            CssClass="pic" /></div>
                                     <div class="date">
-                                         <%# Eval("Postdate")%></div>
+                                        <%# Eval("Postdate")%></div>
                                     <div class="title">
                                         <a href="#">
                                             <%# Eval("Title")%></a></div>
@@ -27,7 +27,14 @@
                                         <%# Eval("Newscontent")%>
                                     </div>
                                     <div class="more">
-                                        <a href='<%# "/Content/NewsDetails.aspx?postId="+ Eval("Id") %>'>подробнее »»</a></div>
+                                        <a href='<%# "/Content/NewsDetails.aspx?postId="+ Eval("Id") %>'>подробнее »»</a>
+                                        <%
+                                            if (User.IsInRole("moderator") || User.IsInRole("admin"))
+                                            {
+                                        %>
+                                        <a href='<%# "/ContentForModerator/EditNews.aspx?postId="+ Eval("Id") %>'>редактировать »»</a>
+                                        <% } %>
+                                    </div>
                                     <div class="clear">
                                     </div>
                                 </div>
@@ -35,13 +42,12 @@
                         </td>
                     </tr>
                     <tr>
-                     <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ContentForModerator/EditNews.aspx?postId="+ Eval("Id") %>'>Edit</asp:HyperLink>--%></div>
-    
+                        <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ContentForModerator/EditNews.aspx?postId="+ Eval("Id") %>'>Edit</asp:HyperLink>--%></div>
                     </tr>
                 </tbody>
             </table>
             <div>
-     </ItemTemplate>
+        </ItemTemplate>
     </asp:ListView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
         SelectCommand="SELECT * FROM [news]"></asp:SqlDataSource>
