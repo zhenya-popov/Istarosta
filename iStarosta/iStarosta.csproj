@@ -91,10 +91,13 @@
     <Content Include="Content\albums\js\supersized.3.2.7.min.js" />
     <Content Include="Content\Clause.aspx" />
     <Content Include="ContentForUser\EditProfile.aspx" />
+    <Content Include="Content\EditProfile.aspx" />
+    <Content Include="Content\MyMessage.aspx" />
     <Content Include="Content\NewsDetails.aspx" />
     <Content Include="Content\albums\theme\supersized.shutter.css" />
     <Content Include="Content\albums\theme\supersized.shutter.js" />
     <Content Include="Content\albums\theme\supersized.shutter.min.js" />
+    <Content Include="Content\SendMessage.aspx" />
     <Content Include="Design\css\style1.css" />
     <Content Include="Design\css\style2.css" />
     <Content Include="Design\img\album.png" />
@@ -230,6 +233,13 @@
     <Compile Include="ContentForUser\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Content\MyMessage.aspx.cs">
+      <DependentUpon>MyMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\MyMessage.aspx.designer.cs">
+      <DependentUpon>MyMessage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Content\NewsDetails.aspx.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -237,6 +247,14 @@
     <Compile Include="Content\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Content\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Messages.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="ContentForUser\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
