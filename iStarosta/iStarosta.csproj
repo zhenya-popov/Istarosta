@@ -65,6 +65,9 @@
     <Content Include="ContentForModerator\DeletePerson.aspx" />
     <Content Include="ContentForModerator\EditNews.aspx" />
     <Content Include="ContentForModerator\EditPerson.aspx" />
+    <Content Include="ContentForUser\AddStudent.aspx" />
+    <Content Include="ContentForUser\DeleteStudent.aspx" />
+    <Content Include="ContentForUser\EditStudent.aspx" />
     <Content Include="Content\albums\Album.aspx" />
     <Content Include="Content\albums\css\supersized.css" />
     <Content Include="Content\albums\img\back.png" />
@@ -87,7 +90,7 @@
     <Content Include="Content\albums\js\supersized.3.2.7.js" />
     <Content Include="Content\albums\js\supersized.3.2.7.min.js" />
     <Content Include="Content\Clause.aspx" />
-    <Content Include="Content\EditProfile.aspx" />
+    <Content Include="ContentForUser\EditProfile.aspx" />
     <Content Include="Content\NewsDetails.aspx" />
     <Content Include="Content\albums\theme\supersized.shutter.css" />
     <Content Include="Content\albums\theme\supersized.shutter.js" />
@@ -122,11 +125,11 @@
     <Content Include="Design\img\no.png" />
     <Content Include="Design\img\social\twitter.png" />
     <Content Include="Design\img\social\vk.png" />
-    <Content Include="ProfileContent\MyGroup.aspx" />
-    <Content Include="ProfileContent\MyJournal.aspx" />
-    <Content Include="ProfileContent\MyMessage.aspx" />
-    <Content Include="ProfileContent\MyPage.aspx" />
-    <Content Include="ProfileContent\MyTasks.aspx" />
+    <Content Include="ContentForUser\MyGroup.aspx" />
+    <Content Include="ContentForUser\MyJournal.aspx" />
+    <Content Include="ContentForUser\MyMessage.aspx" />
+    <Content Include="ContentForUser\MyPage.aspx" />
+    <Content Include="ContentForUser\MyTasks.aspx" />
     <Content Include="ErrorPages\404.aspx" />
     <Content Include="ErrorPages\ApplicationErrorPage.aspx" />
     <Content Include="Content\About.aspx" />
@@ -185,6 +188,27 @@
     <Compile Include="ContentForModerator\EditPerson.aspx.designer.cs">
       <DependentUpon>EditPerson.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContentForUser\AddStudent.aspx.cs">
+      <DependentUpon>AddStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForUser\AddStudent.aspx.designer.cs">
+      <DependentUpon>AddStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentForUser\DeleteStudent.aspx.cs">
+      <DependentUpon>DeleteStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForUser\DeleteStudent.aspx.designer.cs">
+      <DependentUpon>DeleteStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentForUser\EditStudent.aspx.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForUser\EditStudent.aspx.designer.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Content\albums\Album.aspx.cs">
       <DependentUpon>Album.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -199,11 +223,11 @@
     <Compile Include="Content\Clause.aspx.designer.cs">
       <DependentUpon>Clause.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\EditProfile.aspx.cs">
+    <Compile Include="ContentForUser\EditProfile.aspx.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\EditProfile.aspx.designer.cs">
+    <Compile Include="ContentForUser\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\NewsDetails.aspx.cs">
@@ -214,39 +238,39 @@
       <DependentUpon>NewsDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Group.cs" />
-    <Compile Include="ProfileContent\MyGroup.aspx.cs">
+    <Compile Include="ContentForUser\MyGroup.aspx.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProfileContent\MyGroup.aspx.designer.cs">
+    <Compile Include="ContentForUser\MyGroup.aspx.designer.cs">
       <DependentUpon>MyGroup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProfileContent\MyJournal.aspx.cs">
+    <Compile Include="ContentForUser\MyJournal.aspx.cs">
       <DependentUpon>MyJournal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProfileContent\MyJournal.aspx.designer.cs">
+    <Compile Include="ContentForUser\MyJournal.aspx.designer.cs">
       <DependentUpon>MyJournal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProfileContent\MyMessage.aspx.cs">
+    <Compile Include="ContentForUser\MyMessage.aspx.cs">
       <DependentUpon>MyMessage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProfileContent\MyMessage.aspx.designer.cs">
+    <Compile Include="ContentForUser\MyMessage.aspx.designer.cs">
       <DependentUpon>MyMessage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProfileContent\MyPage.aspx.cs">
+    <Compile Include="ContentForUser\MyPage.aspx.cs">
       <DependentUpon>MyPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProfileContent\MyPage.aspx.designer.cs">
+    <Compile Include="ContentForUser\MyPage.aspx.designer.cs">
       <DependentUpon>MyPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProfileContent\MyTasks.aspx.cs">
+    <Compile Include="ContentForUser\MyTasks.aspx.cs">
       <DependentUpon>MyTasks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProfileContent\MyTasks.aspx.designer.cs">
+    <Compile Include="ContentForUser\MyTasks.aspx.designer.cs">
       <DependentUpon>MyTasks.aspx</DependentUpon>
     </Compile>
     <Compile Include="ErrorPages\404.aspx.cs">
@@ -373,6 +397,9 @@
   <ItemGroup>
     <Folder Include="Design\css\journal\" />
     <Folder Include="Design\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentForUser\Web.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

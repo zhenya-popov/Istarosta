@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/iStarosta.Master" AutoEventWireup="true"
-    CodeBehind="MyPage.aspx.cs" Inherits="iStarosta.Enter.MyPage" %>
+    CodeBehind="MyPage.aspx.cs" Inherits="iStarosta.ContentForUser.MyPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -33,7 +33,7 @@
                                             <div class="fl_l">
                                                 <asp:Image ID="Image1" runat="server" Height="200px" Width="200px"/>
                                                 <div id="profile_actions">
-                                                    <a href="/Content/EditProfile.aspx">Редактировать страницу</a></div>
+                                                    <a href="EditProfile.aspx">Редактировать страницу</a></div>
                                             </div>
                                         </div>
                                     </div>

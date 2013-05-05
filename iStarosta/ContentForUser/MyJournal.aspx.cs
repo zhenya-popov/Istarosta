@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace iStarosta.Enter
+namespace iStarosta.ContentForUser
 {
-    public partial class MyMessage : System.Web.UI.Page
+    public partial class MyJournal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

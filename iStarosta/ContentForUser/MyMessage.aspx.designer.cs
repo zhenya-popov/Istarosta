@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iStarosta.Enter {
+namespace iStarosta.ContentForUser {
     
     
     public partial class MyMessage {

@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using iStarosta.Models;
 
-namespace iStarosta.Enter
+namespace iStarosta.ContentForUser
 {
     public partial class MyPage : System.Web.UI.Page
     {

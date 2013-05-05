@@ -13,13 +13,13 @@ namespace iStarosta.ContentForModerator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            UserInfo news = UserInfo.GetById(Convert.ToInt32(Request.Params["postId"]));
-            if (news == null)
+            UserInfo user = UserInfo.GetById(Convert.ToInt32(Request.Params["postId"]));
+            if (user == null)
             {
                 Response.Redirect("/people");
             }
 
-            UserInfo.DeleteUser(news.Id);
+            UserInfo.DeleteUser(user.Id);
             Response.Redirect("/people");
         }
     }

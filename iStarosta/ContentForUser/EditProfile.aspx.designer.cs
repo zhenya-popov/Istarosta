@@ -7,135 +7,126 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iStarosta.Enter {
+namespace iStarosta.ContentForUser {
     
     
-    public partial class MyPage {
+    public partial class EditProfile {
         
         /// <summary>
-        /// NameLabel control.
+        /// txtGroup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NameLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtGroup;
         
         /// <summary>
-        /// SurnameLabel control.
+        /// txtCourse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SurnameLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtCourse;
         
         /// <summary>
-        /// Image1 control.
+        /// txtFaculty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox txtFaculty;
         
         /// <summary>
-        /// BirthdayLabel control.
+        /// txtBirthday control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BirthdayLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtBirthday;
         
         /// <summary>
-        /// CityLabel control.
+        /// txtCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CityLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
-        /// FacultyLabel control.
+        /// txtStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FacultyLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtStatus;
         
         /// <summary>
-        /// PositionLabel control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PositionLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
-        /// CourseLabel control.
+        /// txtVk control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CourseLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtVk;
         
         /// <summary>
-        /// GroupLabel control.
+        /// txtFacebook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label GroupLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtFacebook;
         
         /// <summary>
-        /// PhoneLabel control.
+        /// txtSkype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PhoneLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtSkype;
         
         /// <summary>
-        /// VkLabel control.
+        /// txtTwitter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label VkLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtTwitter;
         
         /// <summary>
-        /// FacebookLabel control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FacebookLabel;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// SkypeLabel control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SkypeLabel;
-        
-        /// <summary>
-        /// TwitterLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TwitterLabel;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

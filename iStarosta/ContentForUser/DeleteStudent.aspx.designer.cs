@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iStarosta.Enter {
+namespace iStarosta.ContentForUser {
     
     
-    public partial class MyJournal {
+    public partial class DeleteStudent {
     }
 }
