@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/iStarosta.Master" CodeBehind="NewsDetails.aspx.cs" Inherits="iStarosta.Content.NewsDetails" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/iStarosta.Master" CodeBehind="NewsDetails.aspx.cs" Inherits="iStarosta.Content.NewsDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -27,32 +27,6 @@
 <a href="javascript:goback()">«« Перейти ко всем новостям</a>
 </div>
 </div></div>
-</div>
-<%--  <table>
-        <tr>
-            <td rowspan="3">
-                <asp:Image ID="Image1" runat="server" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <br/>
-                    <asp:Label ID="Label1" runat="server"/>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <br/>
-                    <asp:Label ID="Label2" runat="server"/><br/>
-                </div>
-            </td>
-        </tr>
-        <br />
-        <br />
-    </table>
-    <br />--%>
+
 </asp:Content>
 

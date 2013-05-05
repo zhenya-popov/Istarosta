@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/iStarosta.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/iStarosta.Master"
 CodeBehind="EditPerson.aspx.cs" Inherits="iStarosta.ContentForModerator.EditPerson" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

@@ -1,8 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/iStarosta.Master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Profile.Master" AutoEventWireup="true"
     CodeBehind="EditProfile.aspx.cs" Inherits="iStarosta.ContentForUser.EditProfile" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     Группа:<asp:TextBox ID="txtGroup" runat="server"></asp:TextBox>
     Курс:<asp:TextBox ID="txtCourse" runat="server"></asp:TextBox>

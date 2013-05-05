@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ResetPassword.aspx.cs" MasterPageFile="~/iStarosta.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ResetPassword.aspx.cs" MasterPageFile="~/MasterPages/iStarosta.Master"
  Inherits="iStarosta.PasswordRecovery.ResetPassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">

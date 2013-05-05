@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddNews.aspx.cs" MasterPageFile="~/iStarosta.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddNews.aspx.cs" MasterPageFile="~/MasterPages/iStarosta.Master"
     Inherits="iStarosta.ContentForModerator.AddNews" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

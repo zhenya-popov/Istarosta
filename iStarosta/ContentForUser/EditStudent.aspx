@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/iStarosta.Master" CodeBehind="EditStudent.aspx.cs" Inherits="iStarosta.ContentForUser.EditStudent" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/Profile.Master" CodeBehind="EditStudent.aspx.cs" Inherits="iStarosta.ContentForUser.EditStudent" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    Имя: <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br/>

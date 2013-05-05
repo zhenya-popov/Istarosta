@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="iStarosta.master.cs"
+    Inherits="iStarosta.iStarosta" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>iStarosta</title>
+   <link href="~/Design/css/style1.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Design/css/style2.css" rel="Stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="Design/img/logo/logo4.jpg" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="header">
+           <img alt='' src="/Design/img/header.png" />
+            
+            <a href="http://www.bsu.by/" target="_blank">
+                <img alt='' title="официальный сайт Белорусского государственного университета" src="/Design/img/bsu.png"
+                    class="bsu" height="70px" /></a>
+
+        </div>
+    </div>
+    <div id="cssmenu" class="menu">
+        <ul>
+            <li><a href="/news"><span>Новости</span></a></li>
+            <li><a href='/about'><span>О нас</span></a></li>
+            <li><a href='/clause'><span>Положение</span></a></li>
+            <li><a href='/people'><span>Персоналии</span></a></li>
+            <li><a href='/projects'><span>Проекты и направления</span></a></li>
+            <li><a href='/photo'><span>Фото</span></a></li>
+            <li><asp:HyperLink ID="HyperLink2" runat="server" Visible="false" NavigateUrl="/profile">Профиль</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/login">Вход</asp:HyperLink></li>
+            <li><asp:LinkButton ID="LinkButton1" runat="server" Visible="false" 
+                    onclick="LinkButton1_Click">Выход</asp:LinkButton></li>
+        </ul>
+    </div>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+     <div>
+        <div class="footer" style="text-align:center;">
+        <br/>
+        <center><b>iStarosta © 2013 г.</b></center>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

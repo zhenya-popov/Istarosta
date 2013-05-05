@@ -5,16 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace iStarosta.Content
+namespace iStarosta
 {
-    using global::iStarosta.Models;
-
-    public partial class MyMessage : System.Web.UI.Page
+    public partial class Profile : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Repeater1.DataSource = Messages.GetMessages();
-            Repeater1.DataBind();
+
         }
     }
 }

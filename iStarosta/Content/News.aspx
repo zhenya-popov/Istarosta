@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/iStarosta.Master" AutoEventWireup="true"
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/iStarosta.Master" AutoEventWireup="true"
     CodeBehind="News.aspx.cs" Inherits="iStarosta.Content.News" %>
 
 <%@ Import Namespace="iStarosta.Content" %>
