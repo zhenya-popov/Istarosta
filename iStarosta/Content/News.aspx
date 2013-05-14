@@ -41,9 +41,6 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ContentForModerator/EditNews.aspx?postId="+ Eval("Id") %>'>Edit</asp:HyperLink>--%></div>
-                    </tr>
                 </tbody>
             </table>
             <div>

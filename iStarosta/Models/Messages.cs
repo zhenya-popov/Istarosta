@@ -24,7 +24,7 @@ namespace iStarosta.Models
                 string connectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM Message", connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM [Message]", connection);
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
@@ -65,14 +65,14 @@ namespace iStarosta.Models
                 connection = new SqlConnection(ConnectionString);
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("INSERT INTO Message (sender, addressee, message) VALUES (@Sender, @Addressee, @Message", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO [Message] (sender, addressee, messagetext) VALUES (@Sender, @Addressee, @Msgtext)", connection);
 
-                SqlParameter surname = new SqlParameter("@Sender", message.Sender);
-                command.Parameters.Add(surname);
-                SqlParameter patronymic = new SqlParameter("@Addressee", message.Addressee);
-                command.Parameters.Add(patronymic);
-                SqlParameter parPassword = new SqlParameter("@Message", message.Message);
-                command.Parameters.Add(parPassword);
+                SqlParameter sender = new SqlParameter("@Sender", message.Sender);
+                command.Parameters.Add(sender);
+                SqlParameter adrdresse = new SqlParameter("@Addressee", message.Addressee);
+                command.Parameters.Add(adrdresse);
+                SqlParameter msg = new SqlParameter("@Msgtext", message.Message);
+                command.Parameters.Add(msg);
 
                 command.ExecuteNonQuery();
 

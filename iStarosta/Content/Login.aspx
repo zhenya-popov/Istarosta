@@ -25,7 +25,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Пароль:"></asp:Label>
             </td>
             <td class="input">
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="TextBox2"
                     runat="server" ErrorMessage="This Field cannot be empty" ForeColor="red" />
             </td>
