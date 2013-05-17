@@ -61,8 +61,10 @@
     <Content Include="App_Data\Images\1.gif" />
     <Content Include="App_Data\Images\default.gif" />
     <Content Include="ContentForAdmin\AddUser.aspx" />
+    <Content Include="ContentForModerator\AddAlbum.aspx" />
     <Content Include="ContentForModerator\AddPerson.aspx" />
     <Content Include="ContentForModerator\AddProject.aspx" />
+    <Content Include="ContentForModerator\DeleteAlbum.aspx" />
     <Content Include="ContentForModerator\DeletePerson.aspx" />
     <Content Include="ContentForModerator\DeleteProject.aspx" />
     <Content Include="ContentForModerator\EditNews.aspx" />
@@ -122,6 +124,14 @@
     <Content Include="Design\img\logo\logo4.jpg" />
     <Content Include="Design\img\logo\logo5.jpg" />
     <Content Include="Design\img\no.png" />
+    <Content Include="Design\img\photos\1.jpg" />
+    <Content Include="Design\img\photos\2.jpg" />
+    <Content Include="Design\img\photos\3.jpg" />
+    <Content Include="Design\img\photos\4.jpg" />
+    <Content Include="Design\img\photos\5.jpg" />
+    <Content Include="Design\img\photos\6.jpg" />
+    <Content Include="Design\img\photos\7.jpg" />
+    <Content Include="Design\img\photos\Wallpapers - 3D-Art - 06.jpg" />
     <Content Include="Design\img\social\twitter.png" />
     <Content Include="Design\img\social\vk.png" />
     <Content Include="ContentForUser\MyGroup.aspx" />
@@ -158,6 +168,13 @@
     <Compile Include="ContentForAdmin\AddUser.aspx.designer.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContentForModerator\AddAlbum.aspx.cs">
+      <DependentUpon>AddAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\AddAlbum.aspx.designer.cs">
+      <DependentUpon>AddAlbum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContentForModerator\AddPerson.aspx.cs">
       <DependentUpon>AddPerson.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,6 +188,13 @@
     </Compile>
     <Compile Include="ContentForModerator\AddProject.aspx.designer.cs">
       <DependentUpon>AddProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentForModerator\DeleteAlbum.aspx.cs">
+      <DependentUpon>DeleteAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\DeleteAlbum.aspx.designer.cs">
+      <DependentUpon>DeleteAlbum.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContentForModerator\DeletePerson.aspx.cs">
       <DependentUpon>DeletePerson.aspx</DependentUpon>
@@ -439,7 +463,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Design\css\journal\" />
-    <Folder Include="Design\img\photos\" />
     <Folder Include="Design\js\" />
   </ItemGroup>
   <ItemGroup>

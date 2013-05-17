@@ -20,13 +20,13 @@
                                     <div class="date">
                                         <%# Eval("Postdate")%></div>
                                     <div class="title">
-                                        <a href='<%# "/Content/NewsDetails.aspx?postId="+ Eval("Id") %>'>
+                                        <a href='<%# "/newsdetails?postId="+ Eval("Id") %>'>
                                             <%# Eval("Title")%></a></div>
                                     <div class="descr">
                                         <%# Eval("Newscontent")%>
                                     </div>
                                     <div class="more">
-                                        <a href='<%# "/Content/NewsDetails.aspx?postId="+ Eval("Id") %>'>подробнее »»</a>
+                                        <a href='<%# "/newsdetails?postId="+ Eval("Id") %>'>подробнее »»</a>
                                         <%
                                             if (User.IsInRole("moderator") || User.IsInRole("admin"))
                                             {

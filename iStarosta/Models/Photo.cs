@@ -26,7 +26,7 @@ namespace iStarosta.Models
                 SqlCommand command = new SqlCommand("INSERT INTO photos (name, albumId)" + " VALUES (@Name, @AlbumId)", connection);
                 SqlParameter name = new SqlParameter("@Name", photo.Name);
                 command.Parameters.Add(name);
-                SqlParameter albumid = new SqlParameter("@Description", photo.AlbumId);
+                SqlParameter albumid = new SqlParameter("@AlbumId", photo.AlbumId);
                 command.Parameters.Add(albumid);
                 command.ExecuteNonQuery();
             }
@@ -52,7 +52,7 @@ namespace iStarosta.Models
                 string ConnectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
                 connection = new SqlConnection(ConnectionString);
                 connection.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM projects WHERE id=@Id", connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM photos WHERE id=@Id", connection);
                 SqlParameter paramId = new SqlParameter("@Id", Id);
                 command.Parameters.Add(paramId);
                 SqlDataReader reader = command.ExecuteReader();
@@ -77,7 +77,7 @@ namespace iStarosta.Models
             return photo;
         }
 
-        public static List<Photo> GetByAlbumId()
+        public static List<Photo> GetByAlbumId(int id)
         {
 
             List<Photo> photos = new List<Photo>();
@@ -87,7 +87,9 @@ namespace iStarosta.Models
                 string ConnectionString = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
                 connection = new SqlConnection(ConnectionString);
                 connection.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM projects WHERE albumid = @Id", connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM photos WHERE albumid = @Id", connection);
+                SqlParameter paramId = new SqlParameter("@Id", id);
+                command.Parameters.Add(paramId);
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {

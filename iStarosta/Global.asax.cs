@@ -19,6 +19,7 @@ namespace iStarosta
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.MapPageRoute("", "news", "~/Content/News.aspx");
+            routes.MapPageRoute("", "newsdetails", "~/Content/NewsDetails.aspx");
             routes.MapPageRoute("", "news/add", "~/ContentForModerator/AddNews.aspx");
             routes.MapPageRoute("", "about", "~/Content/About.aspx");
             routes.MapPageRoute("", "clause", "~/Content/Clause.aspx");
