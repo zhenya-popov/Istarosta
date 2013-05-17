@@ -7,11 +7,11 @@
                     <div id="side_bar" class="fl_l" style="">
                         <ol>
                             <li style=""><a href="/profile" class="left_column"><span class="left_label inl_bl">Моя страница</span></a></li>
-                            <li style=""><a href="ContentForUser/MyMessage.aspx" class="left_column"><span class="left_label inl_bl">Мои сообщения</span></a></li>
-                            <li style=""><a href="ContentForUser/MyJournal.aspx" class="left_column"><span class="left_label inl_bl">
+                            <li style=""><a href="/messages" class="left_column"><span class="left_label inl_bl">Мои сообщения</span></a></li>
+                            <li style=""><a href="#" class="left_column"><span class="left_label inl_bl">
                                 Мой журнал</span></a></li>
                             <li style=""><a href="/group" class="left_column"><span class="left_label inl_bl">Моя группа</span></a></li>
-                            <li style=""><a href="ContentForUser/MyTasks.aspx" class="left_column"><span class="left_label inl_bl">
+                            <li style=""><a href="#" class="left_column"><span class="left_label inl_bl">
                                 Мои задачи</span></a></li></ol>
                     </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

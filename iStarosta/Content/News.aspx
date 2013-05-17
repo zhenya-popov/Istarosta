@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/iStarosta.Master" AutoEventWireup="true"
     CodeBehind="News.aspx.cs" Inherits="iStarosta.Content.News" %>
 
-<%@ Import Namespace="iStarosta.Content" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -21,7 +20,7 @@
                                     <div class="date">
                                         <%# Eval("Postdate")%></div>
                                     <div class="title">
-                                        <a href="#">
+                                        <a href='<%# "/Content/NewsDetails.aspx?postId="+ Eval("Id") %>'>
                                             <%# Eval("Title")%></a></div>
                                     <div class="descr">
                                         <%# Eval("Newscontent")%>

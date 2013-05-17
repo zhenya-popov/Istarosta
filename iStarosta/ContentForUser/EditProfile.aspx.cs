@@ -16,40 +16,40 @@ namespace iStarosta.ContentForUser
         {
             if (!Page.IsPostBack)
             {
-                Models.BsuUser news = Models.BsuUser.GetByName(Page.User.Identity.Name);
-                if (news == null)
+                Models.BsuUser user = Models.BsuUser.GetByName(Page.User.Identity.Name);
+                if (user == null)
                 {
                     Response.Redirect("/people");
                 }
 
-                txtBirthday.Text = news.Birthday;
-                txtCourse.Text = news.Course.ToString();
-                txtFacebook.Text = news.Facebook;
-                txtFaculty.Text = news.Faculty;
-                txtGroup.Text = news.Group.ToString();
-                txtPhone.Text = news.Phone;
-                txtCity.Text = news.City;
-                txtSkype.Text = news.Skype;
-                txtStatus.Text = news.Status;
-                txtTwitter.Text = news.Twitter;
-                txtVk.Text = news.Vk;
+                txtBirthday.Text = user.Birthday;
+                txtCourse.Text = user.Course.ToString();
+                txtFacebook.Text = user.Facebook;
+                txtFaculty.Text = user.Faculty;
+                txtGroup.Text = user.Group.ToString();
+                txtPhone.Text = user.Phone;
+                txtCity.Text = user.City;
+                txtSkype.Text = user.Skype;
+                txtStatus.Text = user.Status;
+                txtTwitter.Text = user.Twitter;
+                txtVk.Text = user.Vk;
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            BsuUser news = BsuUser.GetByName(Page.User.Identity.Name);
-            news.Birthday = txtBirthday.Text;
-            news.Course = Convert.ToInt32(txtCourse.Text);
-            news.Facebook = txtFacebook.Text;
-            news.Faculty = txtFaculty.Text;
-            news.Group = Convert.ToInt32(txtGroup.Text);
-            news.Phone = txtGroup.Text;
-            news.City = txtCity.Text;
-            news.Skype = txtSkype.Text;
-            news.Twitter = txtTwitter.Text;
-            news.Vk = txtVk.Text;
-            news.Status = txtStatus.Text;
+            BsuUser user = BsuUser.GetByName(Page.User.Identity.Name);
+            user.Birthday = txtBirthday.Text;
+            user.Course = txtCourse.Text;
+            user.Facebook = txtFacebook.Text;
+            user.Faculty = txtFaculty.Text;
+            user.Group = txtGroup.Text;
+            user.Phone = txtGroup.Text;
+            user.City = txtCity.Text;
+            user.Skype = txtSkype.Text;
+            user.Twitter = txtTwitter.Text;
+            user.Vk = txtVk.Text;
+            user.Status = txtStatus.Text;
 
             string path = AppDomain.CurrentDomain.BaseDirectory + "Design/img/avatars/";
             string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
@@ -59,10 +59,18 @@ namespace iStarosta.ContentForUser
             }
             else
             {
-                filename = "default.png";
+                if (user.Image != null)
+                {
+                    filename = user.Image;
+                }
+                else
+                {
+                    filename = "default.png";
+                }
+                
             }
-            news.Image = filename;
-            BsuUser.UpdateUser(news);
+            user.Image = filename;
+            BsuUser.UpdateUser(user);
             Response.Redirect("/profile");
         }
     }

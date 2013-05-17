@@ -44,7 +44,7 @@ namespace iStarosta.ContentForModerator
             user.Email = TextBox7.Text;
             user.Skype = TextBox8.Text;
             user.Vkontakte = TextBox9.Text;
-            user.Course = Convert.ToInt32(TextBox10.Text);
+            user.Course = TextBox10.Text;
             UserInfo.UpdateInfo(user);
             Response.Redirect("/people");
         }

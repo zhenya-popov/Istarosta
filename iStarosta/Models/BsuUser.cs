@@ -16,8 +16,8 @@ namespace iStarosta.Models
         public string Surname { get; set; }
         public string Patronymic { get; set; }
         public string Password { get; set; }
-        public int Group { get; set; }
-        public int Course { get; set; }
+        public string Group { get; set; }
+        public string Course { get; set; }
         public string Faculty { get; set; }
         public string Role { get; set; }
 
@@ -274,8 +274,8 @@ namespace iStarosta.Models
             bsuUser.Name = reader["name"].ToString();
             bsuUser.Surname = reader["surname"].ToString();
             bsuUser.Patronymic = reader["patronymic"].ToString();
-            bsuUser.Group = Convert.ToInt32(reader["studygroup"]);
-            bsuUser.Course = Convert.ToInt32(reader["course"]);
+            bsuUser.Group = reader["studygroup"].ToString();
+            bsuUser.Course = reader["course"].ToString();
             bsuUser.Faculty = reader["faculty"].ToString();
             bsuUser.Password = reader["password"].ToString();
             bsuUser.Role = reader["role"].ToString();

@@ -13,8 +13,7 @@ namespace iStarosta.ContentForUser
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Repeater1.DataSource = Messages.GetMessages();
-            Repeater1.DataBind();
+
         }
     }
 }

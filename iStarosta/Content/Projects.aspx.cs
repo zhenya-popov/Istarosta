@@ -11,7 +11,10 @@ namespace iStarosta.Content
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (User.IsInRole("moderator") || User.IsInRole("admin"))
+            {
+                AddProjectLink.Visible = true;
+            }
         }
     }
 }

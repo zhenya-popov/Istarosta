@@ -30,6 +30,9 @@ namespace iStarosta
             routes.MapPageRoute("", "profile", "~/ContentForUser/MyPage.aspx");
             routes.MapPageRoute("", "group", "~/ContentForUser/MyGroup.aspx");
             routes.MapPageRoute("", "addstudent", "~/ContentForUser/AddStudent.aspx");
+            routes.MapPageRoute("", "editprofile", "~/ContentForUser/EditProfile.aspx");
+            routes.MapPageRoute("", "messages", "~/ContentForUser/MyMessage.aspx");
+            routes.MapPageRoute("", "sendmessage", "~/ContentForUser/SendMessage.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

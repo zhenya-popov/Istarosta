@@ -36,8 +36,8 @@ namespace iStarosta.ContentForAdmin
             user.Surname = TextBox3.Text;
             user.Patronymic = TextBox4.Text;
             user.Password = GetMd5Hash(md5Hash,TextBox5.Text);
-            user.Group = Convert.ToInt32(TextBox6.Text);
-            user.Course = Convert.ToInt32(TextBox7.Text);
+            user.Group = TextBox6.Text;
+            user.Course = TextBox7.Text;
             user.Faculty = TextBox8.Text;
             user.Role = TextBox9.Text;
             user.Email = TextBox10.Text;

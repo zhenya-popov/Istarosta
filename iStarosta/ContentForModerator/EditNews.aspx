@@ -15,6 +15,8 @@
                 <div>
                     Title:<br/>
                     <asp:TextBox ID="TextBox1" runat="server"/>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"
+                    ErrorMessage="Это поле не может быть пустым!" ForeColor="red" />
                 </div>
             </td>
         </tr>
@@ -22,7 +24,9 @@
             <td>
                 <div>
                     Content:<br/>
-                    <asp:TextBox Height="200px" Width="300px" ID="TextBox2" runat="server"/><br/>
+                    <textarea id="TextArea1" name="S1" style="height: 100px; width: 280px" runat="server"></textarea><br/>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextArea1"
+                    ErrorMessage="Это поле не может быть пустым!" ForeColor="red" />
                 </div>
             </td>
         </tr>

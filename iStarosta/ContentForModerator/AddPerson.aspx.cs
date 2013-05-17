@@ -26,12 +26,13 @@ namespace iStarosta.ContentForModerator
             }
             else
             {
-                filename = "1.jpg";
+                filename = "default.png";
             }
             UserInfo user = new UserInfo(){Name = TextBox1.Text, Surname = TextBox2.Text, Patronymic = TextBox3.Text, 
                 Position = TextBox4.Text, Faculty = TextBox5.Text, PhoneNumber = TextBox6.Text, Email = TextBox7.Text,
-            Skype = TextBox8.Text, Vkontakte = TextBox9.Text, Course = Convert.ToInt32(TextBox10.Text), ImageLink = filename};
+            Skype = TextBox8.Text, Vkontakte = TextBox9.Text, Course = TextBox10.Text, ImageLink = filename};
             UserInfo.CreateUser(user);
+            Response.Redirect("/people");
         }
     }
 }

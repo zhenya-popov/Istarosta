@@ -62,9 +62,12 @@
     <Content Include="App_Data\Images\default.gif" />
     <Content Include="ContentForAdmin\AddUser.aspx" />
     <Content Include="ContentForModerator\AddPerson.aspx" />
+    <Content Include="ContentForModerator\AddProject.aspx" />
     <Content Include="ContentForModerator\DeletePerson.aspx" />
+    <Content Include="ContentForModerator\DeleteProject.aspx" />
     <Content Include="ContentForModerator\EditNews.aspx" />
     <Content Include="ContentForModerator\EditPerson.aspx" />
+    <Content Include="ContentForModerator\EditProject.aspx" />
     <Content Include="ContentForUser\AddStudent.aspx" />
     <Content Include="ContentForUser\DeleteStudent.aspx" />
     <Content Include="ContentForUser\EditStudent.aspx" />
@@ -103,20 +106,13 @@
     <Content Include="Design\img\bsuPerson\2.jpg" />
     <Content Include="Design\img\bsuPerson\3.jpg" />
     <Content Include="Design\img\bsuPerson\4.jpg" />
-    <Content Include="Design\img\bsuPerson\47ctRCPdx9E.jpg" />
     <Content Include="Design\img\bsuPerson\5.jpg" />
     <Content Include="Design\img\bsuPerson\6.jpg" />
     <Content Include="Design\img\bsuPerson\7.jpg" />
-    <Content Include="Design\img\bsuPerson\7z4_YHteSM0.jpg" />
-    <Content Include="Design\img\bsuPerson\80693.png" />
-    <Content Include="Design\img\bsuPerson\ghQUlFTEBf0.jpg" />
-    <Content Include="Design\img\bsuPerson\mkLSzYxTvMs.jpg" />
     <Content Include="Design\img\bsuPerson\1.jpg" />
-    <Content Include="Design\img\bsuPerson\vqHye4A3zHQ.jpg" />
-    <Content Include="Design\img\bsuPerson\VuX7QXvJ7LI.jpg" />
-    <Content Include="Design\img\bsuPerson\z0L6S7Mb04A.jpg" />
     <Content Include="Design\img\bsu.png" />
     <Content Include="Design\img\avatars\default.png" />
+    <Content Include="Design\img\bsuPerson\default.png" />
     <Content Include="Design\img\footer.png" />
     <Content Include="Design\img\header.png" />
     <Content Include="Design\img\logo\logo1.jpg" />
@@ -168,12 +164,26 @@
     <Compile Include="ContentForModerator\AddPerson.aspx.designer.cs">
       <DependentUpon>AddPerson.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContentForModerator\AddProject.aspx.cs">
+      <DependentUpon>AddProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\AddProject.aspx.designer.cs">
+      <DependentUpon>AddProject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContentForModerator\DeletePerson.aspx.cs">
       <DependentUpon>DeletePerson.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ContentForModerator\DeletePerson.aspx.designer.cs">
       <DependentUpon>DeletePerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentForModerator\DeleteProject.aspx.cs">
+      <DependentUpon>DeleteProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\DeleteProject.aspx.designer.cs">
+      <DependentUpon>DeleteProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContentForModerator\EditNews.aspx.cs">
       <DependentUpon>EditNews.aspx</DependentUpon>
@@ -188,6 +198,13 @@
     </Compile>
     <Compile Include="ContentForModerator\EditPerson.aspx.designer.cs">
       <DependentUpon>EditPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentForModerator\EditProject.aspx.cs">
+      <DependentUpon>EditProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentForModerator\EditProject.aspx.designer.cs">
+      <DependentUpon>EditProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContentForUser\AddStudent.aspx.cs">
       <DependentUpon>AddStudent.aspx</DependentUpon>
@@ -358,7 +375,6 @@
     <Compile Include="Content\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\BsuInfo.cs" />
     <Compile Include="Models\BsuUser.cs" />
     <Compile Include="ContentForModerator\AddNews.aspx.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
@@ -369,6 +385,7 @@
     </Compile>
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\PasswordRecoveryModel.cs" />
+    <Compile Include="Models\Project.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="PasswordRecovery\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>

@@ -17,7 +17,7 @@
                         <div class="fl_l">
                             <asp:Image ID="Image1" runat="server" Height="200px" Width="200px" />
                             <div id="profile_actions">
-                                <a href="EditProfile.aspx">Редактировать страницу</a></div>
+                                <a href="/editprofile">Редактировать страницу</a></div>
                         </div>
                     </div>
                 </div>

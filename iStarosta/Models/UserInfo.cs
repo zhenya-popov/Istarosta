@@ -19,7 +19,7 @@ namespace iStarosta.Models
         public string Surname { get; set; }
         public string Patronymic { get; set; }
         public string Email { get; set; }
-        public int Course { get; set; }
+        public string Course { get; set; }
         public string Faculty { get; set; }
         public string Position { get; set; }
 
@@ -232,7 +232,7 @@ namespace iStarosta.Models
             info.Surname = reader["surname"].ToString();
             info.Patronymic = reader["patronymic"].ToString();
             info.Email = reader["email"].ToString();
-            info.Course = Convert.ToInt32(reader["course"]);
+            info.Course = reader["course"].ToString();
             info.Faculty = reader["faculty"].ToString();
             info.Position = reader["position"].ToString();
 

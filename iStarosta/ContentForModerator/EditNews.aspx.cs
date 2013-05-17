@@ -19,8 +19,8 @@ namespace iStarosta.ContentForModerator
                 {
                     Response.Redirect("/news");
                 }
-                TextBox1.Text = news.Title;
-                TextBox2.Text = news.Content;
+                TextArea1.InnerText = news.Title;
+                TextArea1.InnerText = news.Content;
                 Image1.ImageUrl = "~/Handlers/PictureHandler.ashx?imageName=" + news.ImageName;
             }
         }
@@ -29,7 +29,7 @@ namespace iStarosta.ContentForModerator
         {
             News news = News.GetById(Convert.ToInt32(Request.Params["postId"]));
             news.Title = TextBox1.Text;
-            news.Content = TextBox2.Text;
+            news.Content = TextArea1.InnerText;
             News.UpdateNews(news);
             Response.Redirect("/news");
         }

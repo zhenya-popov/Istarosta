@@ -1,13 +1,29 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/iStarosta.Master" AutoEventWireup="true" CodeBehind="Projects.aspx.cs" Inherits="iStarosta.Content.Projects" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/iStarosta.Master" AutoEventWireup="true"
+    CodeBehind="Projects.aspx.cs" Inherits="iStarosta.Content.Projects" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<h2>Проекты и направления Совета старост БГУ</h2>
-<p><b>«Инфостар»</b> - проведение комплекса мероприятий по созданию отлаженной информационной сети. Повышение уровня информированности старост и оптимизация их деятельности, которая приведет к повышению уровня осведомленности студентов, скорости распространения и доступности информации; </p>
-<p><b>«Мониторинг»</b> - наблюдение интересов студенчества, проведение независимых опросов и поиск решений проблем путем проведения открытых собраний, круглых столов; </p>
-<p><b>«Команда»</b> – налаживание доверительных отношений между студентами группы. Создание из учебной группы сплоченного коллектива с общими целями и интересами путем проведения психологических тренингов на командообразование; </p>
-<p><b>«Куратор»</b> – реализация и развитие проекта «Студенческая кураторская служба БГУ» совместно с ОО «Студенческий Союз БГУ». Помощь студентам первого курса в адаптации к жизни в университете путем курирования группы студентом-куратором, привлечение их к активному участию в общественной, культурной, спортивной, учебной и научной жизни университета, а также развитие у студентов лидерских качеств. </p>
-<p><b>«Школа старост»</b> - проведение выездного образовательного семинара «Ты – староста!» для старост учебных групп первого курса на базе СОК «Бригантина». </p>
-<p><b>«День старосты»</b> - проведение комплекса мероприятий для повышения имиджа старост учебных групп среди студентов БГУ; обмен опытом среди аналогичных организаций других вузов Беларуси; награждение лучших членов Совета старост БГУ и Советов старост факультетов.</p>
+    <h2>
+        Проекты и направления Совета старост БГУ</h2>
+    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+            <p><b><%# Eval("Name")%>:</b> <%# Eval("Description")%></p>
+            <%
+                    if (User.IsInRole("moderator") || User.IsInRole("admin"))
+                    {
+                %>
+                <div>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ContentForModerator/EditProject.aspx?postId="+ Eval("Id") %>'>Редактировать</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/ContentForModerator/DeleteProject.aspx?postId="+ Eval("Id") %>'>Удалить</asp:HyperLink>
+                </div>
+                <%
+                } %>
+        </ItemTemplate>
+    </asp:ListView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+        SelectCommand="SELECT [id], [name], [description] FROM [projects]"></asp:SqlDataSource>
+
+    <asp:HyperLink ID="AddProjectLink" NavigateUrl="~/ContentForModerator/AddProject.aspx"
+        Visible="false" runat="server">Добавить проект</asp:HyperLink>
 </asp:Content>
