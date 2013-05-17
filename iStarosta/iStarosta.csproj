@@ -71,6 +71,7 @@
     <Content Include="ContentForUser\AddStudent.aspx" />
     <Content Include="ContentForUser\DeleteStudent.aspx" />
     <Content Include="ContentForUser\EditStudent.aspx" />
+    <Content Include="Content\AlbumDetails.aspx" />
     <Content Include="Content\albums\Album.aspx" />
     <Content Include="Content\albums\css\supersized.css" />
     <Content Include="Content\albums\img\back.png" />
@@ -227,6 +228,13 @@
     <Compile Include="ContentForUser\EditStudent.aspx.designer.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Content\AlbumDetails.aspx.cs">
+      <DependentUpon>AlbumDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AlbumDetails.aspx.designer.cs">
+      <DependentUpon>AlbumDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Content\albums\Album.aspx.cs">
       <DependentUpon>Album.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -269,6 +277,7 @@
     <Compile Include="ContentForUser\SendMessage.aspx.designer.cs">
       <DependentUpon>SendMessage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Messages.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="ContentForUser\MyGroup.aspx.cs">
@@ -385,6 +394,7 @@
     </Compile>
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\PasswordRecoveryModel.cs" />
+    <Compile Include="Models\Photo.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="PasswordRecovery\ChangePassword.aspx.cs">
@@ -429,6 +439,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Design\css\journal\" />
+    <Folder Include="Design\img\photos\" />
     <Folder Include="Design\js\" />
   </ItemGroup>
   <ItemGroup>

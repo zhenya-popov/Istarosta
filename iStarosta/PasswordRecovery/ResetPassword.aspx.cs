@@ -36,10 +36,10 @@ namespace iStarosta.PasswordRecovery
 
         private void SendPasswordResetEmail(string toEmail, string uid)
         {
-            MailMessage mailMessage = new MailMessage("test@gmail.com", toEmail);
+            MailMessage mailMessage = new MailMessage("bsuistarosta@gmail.com", toEmail);
             StringBuilder sb = new StringBuilder();
 
-            sb.Append("http://localhost:63542/PasswordRecovery/ChangePassword.aspx?uid=" + uid);
+            sb.Append("http://istarosta.bsu.by/PasswordRecovery/ChangePassword.aspx?uid=" + uid);
 
             mailMessage.IsBodyHtml = true;
             mailMessage.Body = sb.ToString();
@@ -48,9 +48,8 @@ namespace iStarosta.PasswordRecovery
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
             smtpClient.Credentials = new NetworkCredential()
             {
-                //waiting for bsu email
-                UserName = "test@gmail.com",
-                Password = "testtest"
+                UserName = "bsuistarosta@gmail.com",
+                Password = "djccnfyjdktybtgfhjkz"
             };
 
             smtpClient.EnableSsl = true;

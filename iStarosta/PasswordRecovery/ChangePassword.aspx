@@ -5,9 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 New password:<br/>
-    <asp:TextBox ID="TextBoxPassword" runat="server"></asp:TextBox><br/>
+    <asp:TextBox ID="TextBoxPassword" TextMode="Password" runat="server"></asp:TextBox><br/>
 Confirm new password:<br/>
-    <asp:TextBox ID="TextBoxConfirm" runat="server"></asp:TextBox><br/>
+    <asp:TextBox ID="TextBoxConfirm" TextMode="Password" runat="server"></asp:TextBox><br/>
     <asp:Button ID="Button1" runat="server" Text="Change password" 
         onclick="Button1_Click" /><br/>
     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
