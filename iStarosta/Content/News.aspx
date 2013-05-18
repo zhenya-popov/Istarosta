@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:HyperLink ID="AddNewsLink" NavigateUrl="~/ContentForModerator/AddNews.aspx"
         Visible="false" runat="server">Добавить новость</asp:HyperLink>
-    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" DataKeyNames="id">
+    <asp:ListView ID="ListView1" runat="server" DataKeyNames="id">
         <ItemTemplate>
             <table style="width: 600px; margin: 0 auto" cellpadding="0" cellspacing="0">
                 <tbody>
@@ -23,7 +23,7 @@
                                         <a href='<%# "/newsdetails?postId="+ Eval("Id") %>'>
                                             <%# Eval("Title")%></a></div>
                                     <div class="descr">
-                                        <%# Eval("Newscontent")%>
+                                        <%# Eval("Content")%>
                                     </div>
                                     <div class="more">
                                         <a href='<%# "/newsdetails?postId="+ Eval("Id") %>'>подробнее »»</a>
@@ -45,9 +45,7 @@
             <div>
         </ItemTemplate>
     </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-        SelectCommand="SELECT * FROM [news]"></asp:SqlDataSource>
-    <asp:DataPager ID="DataPager1" PagedControlID="ListView1" PageSize="2" runat="server">
+    <asp:DataPager ID="DataPager1" PagedControlID="ListView1" PageSize="5" runat="server">
         <Fields>
             <asp:NumericPagerField ButtonType="Link" />
         </Fields>

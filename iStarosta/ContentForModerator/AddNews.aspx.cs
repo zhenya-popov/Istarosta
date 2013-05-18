@@ -20,14 +20,6 @@ namespace iStarosta.ContentForModerator
         {
             Guid guid = Guid.NewGuid();
 
-            //TODO: try to use this code later for photos
-          /*  string path = AppDomain.CurrentDomain.BaseDirectory + "App_Data/Images/";
-            string filename = Path.GetFileName(FileUpload1.PostedFile.FileName);
-            if (filename != null)
-            {
-                FileUpload1.PostedFile.SaveAs(Path.Combine(path, filename));
-            } */
-
             if (FileUpload1.PostedFile.FileName != "")
             {
                 FileUpload1.PostedFile.SaveAs(Server.MapPath("~/App_Data/Images/" + guid.ToString()));
@@ -37,7 +29,7 @@ namespace iStarosta.ContentForModerator
             {
                 News.AddNews(TextBox1.Text, TextArea1.Value, "default.gif", "");
             }
-            Response.Redirect("~/ContentForModerator/AddNews.aspx");
+            Response.Redirect("/news");
         }
     }
 }

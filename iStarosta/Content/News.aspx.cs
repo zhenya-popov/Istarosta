@@ -18,6 +18,10 @@ namespace iStarosta.Content
             {
                 AddNewsLink.Visible = true;
             }
+            List<Models.News> news = Models.News.GetNews();
+            news.Reverse();
+            ListView1.DataSource = news;
+            ListView1.DataBind();
         }
     }
 }
